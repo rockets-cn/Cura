@@ -19,7 +19,7 @@ class preferencesDialog(wx.Frame):
 		self.panel = configBase.configPanelBase(self)
 		
 		left, right, main = self.panel.CreateConfigPanel(self)
-		configBase.TitleRow(left, 'Machine settings')
+		configBase.TitleRow(left, '打印机设置')
 		c = configBase.SettingRow(left, 'Steps per E', 'steps_per_e', '0', 'Amount of steps per mm filament extrusion', type = 'preference')
 		validators.validFloat(c, 0.1)
 		c = configBase.SettingRow(left, 'Maximum width (mm)', 'machine_width', '205', 'Size of the machine in mm', type = 'preference')
